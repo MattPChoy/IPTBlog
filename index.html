@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Internet Privacy Blog</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<img id="icons" class="top" src="images/icons.png">
+	<img id="logo" class="top" src="images/logo.png">
+
+
+	<div class="asdf">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <button id="myBtn">Create Account</button>
+          <!--<button id="myBtn" onclick="test()">Open Modal</button>-->
+        </ul>
+
+        <!--div containing banner-->
+		<div id=banner>
+			<div style="position:absolute;" id="div1"><img id="banner1" class="banner" src="images/image1.png"></div>
+			<div style="position:absolute;" id="div2"><img id="banner2" class="banner" src="images/image2.jpg"></div>
+			<div style="position:absolute;" id="div3"><img id="banner3" class="banner" src="images/image3.png"></div>
+        <!--Login Modal-->
+		<div id="myModal" class="modal">
+          <!-- Modal content -->
+            <!-- <span class="close">&times;</span> -->
+                <div id="container">
+                    <label for="username" id="usernameHeader">Username:</label>
+                    <span class="close" onClick="closeModal()">×</span>
+                    <input type="text" id="name" name="username" placeholder="Username">
+                    <!-- <input type="text" id="name" name="username" value="Admin"> -->
+
+                    <label for="password" id="passwordHeader">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+
+                    <label for="email" id="emailHeader">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="email@example.com">
+
+                    <label for="DoB" id="DoBHeader">Date of Birth:</label>
+                    <input type="date" id="DoB" name="DoB">
+
+                    <div id="lower">
+                        <input type="checkbox" id="checkbox"><label class="check" for="checkbox">Keep me logged in</label>
+                        <!-- <input type="submit" value="Login"> -->
+                        <button onClick="myFunction()" type="submit" form="login">Login</button>
+
+                    <p id=modalErrors style="color:red; text-align: center; padding-top: 9px;"></p>
+                    </div>
+            </div>
+
+        </div>
+
+		<div id=inset>
+			<!-- adjust inset to push down title: top, right, bottom, left-->
+		</div>
+
+        <!--Main div containing text, popup references, comments.-->
+		<div id=content>
+		<h1> Internet Privacy and Smart Home Devices</h1>
+		<p id="caption"> by Matthew Choy - 12/3/18</p>
+
+		<p><b>Digital Assistants – What happens with your data?</b></p>
+
+
+		<p id="body">
+		The Internet of Things (IoT) is a network of physical devices ranging
+		from vehicles to home appliances embedded with sensors and electronic
+		circuitry which allows them to communicate to other IoT-enabled devices
+		around it. Smart home devices such as the Google Home and Amazon Alexa
+		are just a small subset of the Internet of Things. They aim to break
+		down the barrier between human and computer by providing a hands-free
+		way of interacting with the digital realm.
+		</p>
+		<p id="body">
+        This blog post will explore the issues surrounding data security of
+        smart home devices from the various perspectives of stakeholders - users
+        , governments and technology companies. Some recommendations on how to
+        protect yourself will be provided.
+        </p>
+
+
+		<p id="body">
+
+	    For many people, digital assistant devices like the Google Home and
+	    Amazon Alexa are extremely useful. The Google Home platform allows the
+	    consumer to interface with over 1500 IoT-enabled devices, from home
+	    security systems, cooking appliances and robotic vacuum cleaners into
+	    one smart hub. Imagine being able to turn on your air conditioning before
+	    you come home or turning on your oven on your way home.
+	    </p>
+	    <p id="body">
+	    In today’s fast-paced society, having access to information instantaneously
+	    allows you to quickly and efficiently make decisions. Google Home and
+	    other smart home devices enable the user to seamlessly integrate with
+	    other services such email and calendars through a hands-free interface.
+	    Arguably, the Google Home’s most impressive feature is its ability to
+	    answer your questions through the power of the internet.
+
+		<a id="link1" href="https://www.theverge.com/2017/10/8/16439458/google-home-update-feature-list-skills" onmouseover="activateTooltip('toolTip1','link1');" onmouseout="hideTooltip('toolTip1');">(Verge, 2018)</a>
+		<!--<script src="scripts.js"></script>-->
+		<a class="tooltip" id="toolTip1" style="margin-left:0px;">The Verge, J. (2017, October 8). Everything new you can do with Google Home.</a>
+		</p>
+
+		<p id="body">
+        However, for the Google service to function, it must have an internet
+        connection. This constant connection to external servers presents an
+        opportunity for hackers to remotely gain access to powerful microphones
+        and cameras in households worldwide, compromising your privacy. Hackers
+        could even control smart door locks and break into your house!
+        </p>
+        <p id="body">
+		From the perspective of governments, the data gathered from smart home
+		devices and other digital devices can be collated with the help of other
+		organisations into a highly detailed database. In early 2016, the US
+		Intelligence Chief James Clapper acknowledged for the first time that
+		agencies might use smart household devices to increase their surveillance
+		capabilities.
+		</p>
+		<p id="body" style="text-align:center; margin-left:5%; margin-right: 5%">
+		    <i>
+		        ‘In the future, intelligence services might use the internet of
+		        things for identification, surveillance, monitoring, location
+		        tracking, and targeting for recruitment.’
+		    </i>
+		    <br><br>
+		    James Clapper (US Director of National Intelligence) in a 2016
+		    presentation on the assessment of threats against the US.
+		    <br>
+		    <a id="link3" href="https://www.theguardian.com/technology/2016/feb/09/internet-of-things-smart-home-devices-government-surveillance-james-clapper" onmouseover="activateTooltip('toolTip3','link3');" onmouseout="hideTooltip('toolTip3');">(The Guardian, 2016)</a>
+    		<a class="tooltip" id="toolTip3">The Guardian. (2017, July 14). US intelligence chief: we might use the internet of things to spy on you. "</a><br><br>
+		</p>
+		</p>
+		<p id="body">
+		As representatives of the people, governments have the responsibility of
+		protecting consumers. Rules and regulations regarding the use of the data
+		collected from digital devices are lacking. Governments must undertake
+		the great challenge of navigating the controversial aspect of data security.
+		Do governments have the right to access personal information if it was for
+		prosecuting criminals? Would it be acceptable if our voting preferences were
+		accessed?
+		</p>
+
+		<p id="body">
+
+
+        </p>
+
+        <p id="body">Technology companies such as Google and Amazon can utilise information gathered from smart home devices for their financial benefit. They can record conversations through the microphone without the user’s consent or knowledge. Combining this information with the data gathered from search queries, emails and other services allows Google to obtain an extremely detailed view of your interests and daily life. This information can be used to create targeted advertising profiles, utilised through the Google AdSense program or sold as big data to other companies. </p>
+        <p id="body">Presently, consumers face two prevalent issues regarding smart home devices. There are no consumer laws preventing companies from altering the software within their products like Apple’s software update in December of last year. The company introduced a power management feature which claimed to prevent unexpected shutdowns in older devices. Unbeknownst to the user, the feature slowed down the processors of last-generation devices, motivating many consumers to purchase newer models. Although not malicious, this demonstrates the ease in which companies can change the software within their devices for both strategic and financial gain. </p>
+        <p id="body">Another prominent consumer issue facing smart home devices are the laws surrounding what these devices can record. The question needs to be asked – What is happening to the information collected from these devices? Google has only said that it uses the information ‘mined’ for improving the quality of the service – does this mean selling users data for project funding? </p>
+        <p id="body">Governments and users need to work together to benefit from the use of smart home devices while mitigating the risks associated. It is recommended that all users carefully read terms and conditions before agreeing to use them. If you are uncomfortable with any of the conditions stated, it is advisable to not use or purchase the device. Unknown to many, the EULA (End User License Agreement) can be changed without the user knowing. Therefore, it is a good practice to review the EULA on a regular basis to ensure that you and your data are not being exploited. </p>
+        <p id="body">Users should be conscious of the security risks and concerns associated with purchasing a device. The use of a smart home device provides external access to powerful microphones and cameras amongst other things in your house, compromising your privacy.  Consumers should not purchase devices which contain features they are uncomfortable with or have concerns over the device’s security and privacy. </p>
+        <p id="body">Installing an advertisement blocker will minimise the effects of targeted advertising on the user. Popular ad blockers, such as uBlock Origin and adBlock Plus use JavaScript to filter or remove advertising content on web pages by altering JavaScript and CSS properties.
+        <a id="link4" href="https://adblockplus.org/en/faq_internal#elemhide" onmouseover="activateTooltip('toolTip4','link4');" onmouseout="hideTooltip('toolTip4');">(adBlock Plus, 2016)</a>
+    		<a class="tooltip" id="toolTip4" style="position:absolute;">AdBlock Plus. (2017). FAQ - Adblock Plus internals.</a></p>
+        <p id="body">It is imperative that Governments and regulatory organisations consider the effects of digital exploitation and create regulations to protect users. The issues of information privacy and exploitation will only increase as technology advances. Governments should prioritise the needs of its citizens over that of large technology corporations. </p>
+        <p id="body">Smart home devices such as the Google Home and Amazon Alexa successfully provide an intuitive interface between human and computer. However, with this convenience comes serious privacy and security issues. Consumers should be aware of the capabilities of the products they purchase and evaluate whether the benefits of such a product outweigh the risks associated. Governments and other organisations which regulate technology should safeguard their citizens instead of the capitalistic intentions of large organisations.  </p>
+
+        <p id="body">
+        <!--Comments-->
+		<div id="comments" style="border-top: solid black 1px; border-bottom: solid black 1px;">
+		<!--<div id="comments" style="border: solid red;">-->
+    		<script src="scripts.js"></script>
+            <p id="commentHeader">Comment:</p>
+            <input type="text" id="commentInput">
+            <button id="commentSubmit" onClick="submitComment()">Comment</button>
+            <p id=commentBox></p>
+            <div id="comments" style="position:absolute;"></div>
+        </div>
+        <p id="body" style="text-align:center;">References:</p>
+        <p id="body">
+        <!--Bibliography-->
+		AdBlock Plus. (2017). FAQ - Adblock Plus internals. Retrieved from <a href="https://adblockplus.org/en/faq_internal#elemhide">https://adblockplus.org/en/faq_internal#elemhide</a><br><br>
+
+        Google. (n.d.). Google Assistant Partners - Google Home Help. Retrieved from <a href="https://support.google.com/googlehome/table/7401014?hl=en">https://support.google.com/googlehome/table/7401014?hl=en</a><br><br>
+
+		The Guardian. (2017, July 14). US intelligence chief: we might use the internet of things to spy on you. Retrieved from<a href="https://www.theguardian.com/technology/2016/feb/09/internet-of-things-smart-home-devices-government-surveillance-james-clapper">//www.theguardian.com/technology/2016/feb/09/internet-of-things-smart-home-devices-government-surveillance-james-clapper</a><br><br>
+
+		IoT Hub. (2017, September 12). Privacy flaws of smart home devices revealed. Retrieved from <a href="https://www.iothub.com.au/news/privacy-flaws-of-smart-home-devices-revealed-473101">https://www.iothub.com.au/news/privacy-flaws-of-smart-home-devices-revealed-473101</a><br><br>
+
+        Lifehacker. (2018, March 11). How To Protect Your Privacy On Your Smart Home Devices. Retrieved from <a href="https://www.lifehacker.com.au/2018/02/how-to-protect-your-privacy-on-your-smart-home-devices/">https://www.lifehacker.com.au/2018/02/how-to-protect-your-privacy-on-your-smart-home-devices/</a><br><br>
+
+		Quartz, M. (2016, November 7). If you need a smart assistant in your life, get a Google Home. Retrieved from AdBlock Plus. (2017). FAQ - Adblock Plus internals. Retrieved from <a href="https://qz.com/827100/should-you-get-a-google-goog-home-over-an-amazon-amzn-echo/">https://qz.com/827100/should-you-get-a-google-goog-home-over-an-amazon-amzn-echo/</a><br><br>
+
+		The Verge. (2017, October 8). Everything new you can do with Google Home. Retrieved from
+		<a href="https://www.theverge.com/2017/10/8/16439458/google-home-update-feature-list-skills">https://www.theverge.com/2017/10/8/16439458/google-home-update-feature-list-skills</a><br><br>
+
+        News.com. (2017, October 26). Google's recording everything you say and recording. Retrieved from <a href="http://www.news.com.au/technology/online/security/google-is-recording-everything-you-say-to-a-bot/news-story/fcf90d5c6b20acb9cf35d1e6c029a3ac">http://www.news.com.au/technology/online/security/google-is-recording-everything-you-say-to-a-bot/news-story/fcf90d5c6b20acb9cf35d1e6c029a3ac</a>
+		</p>
+	</div>
+</div>
+	<br>
+</body>
+</html>
